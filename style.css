@@ -1,0 +1,95 @@
+body{
+    background-color:darkgrey;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 2vw
+}
+
+#logo {
+    color: rgb(117, 76, 6);
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One",sans-serif;
+    box-shadow: 8px 10px 10px 8px pink;
+    width: 30%;
+    text-shadow:
+    1px 1px 0px black
+    -1px 1px 0px black
+    1px -1px 0px black
+    -1px -1px 0px black;
+}
+
+h1{
+    margin: 10px 30px;
+    padding: 0px;
+    font-family: "Fredoka One", sans-serif;
+}
+
+ul{
+    margin: 0px;
+}
+
+
+body > header{
+    background-color: aquamarine;
+    color: aliceblue;
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li{
+    padding:8px; 
+    margin:16px;
+}
+
+body > header > nav > ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbutton {
+    color: beige;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid crimson;
+}
+
+body > main >article{
+    width: 70%;
+    margin: auto;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div{
+    width: 70%;
+}
+
+form{
+    text-align: center;
+}
+
+body > footer{
+    background-color: aquamarine;
+    display: flex;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div >ul{
+    margin-left:12px;
+    color:blueviolet;
+    text-decoration:none;
+}
