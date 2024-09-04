@@ -1,42 +1,26 @@
 body{
-    background-color:darkgrey;
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0px;
-    font-size: 2vw
+    margin: 0;
 }
 
-#logo {
-    color: rgb(117, 76, 6);
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One",sans-serif;
-    box-shadow: 8px 10px 10px 8px pink;
-    width: 30%;
-    text-shadow:
-    1px 1px 0px black
-    -1px 1px 0px black
-    1px -1px 0px black
-    -1px -1px 0px black;
+header {
+    padding: 16px;
+    background-color: darkviolet;
+    color: #ffffff;
+    text-align: center;
+    grid-area: header;
 }
 
-h1{
-    margin: 10px 30px;
-    padding: 0px;
-    font-family: "Fredoka One", sans-serif;
+#menu {
+    padding: 32px;
+    background-color:plum;
+    grid-area: menu;
 }
 
-ul{
-    margin: 0px;
-}
-
-
-body > header{
-    background-color: aquamarine;
-    color: aliceblue;
+nav{
+    margin-top: 20px;
     display: flex;
-    height: 15vh;
     align-items: center;
-    justify-content: space-around;
+    flex-flow:column
 }
 
 #nav-ul {
@@ -53,43 +37,33 @@ body > header > nav > ul{
     text-decoration: none;
 }
 
-.navbutton {
-    color: beige;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid crimson;
+#main-content {
+    padding: 32px;
+    grid-area: main;
 }
 
-body > main >article{
-    width: 70%;
-    margin: auto;
-}
-
-#main-content{
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div{
-    width: 70%;
-}
-
-form{
+footer{
+    padding: 16px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
     text-align: center;
+    grid-area: footer;
 }
 
-body > footer{
-    background-color: aquamarine;
-    display: flex;
+#form{
+    display:flex;
+    text-align: left;
+    grid-area:form;
+    background-color: gold;
 }
 
-#footer-ul{
-    display: flex;
-    list-style: none;
-}
-
-#footer-ul > div >ul{
-    margin-left:12px;
-    color:blueviolet;
-    text-decoration:none;
+#grrrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "form form"
+    "footer footer";
+    grid-template-columns: 1fr 6fr;
 }
